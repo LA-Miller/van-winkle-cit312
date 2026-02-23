@@ -1,22 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Van Winkle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
+
 <body>
+
+    <!-- ===== Task 4: Hamburger / Desktop Menu (lesson :target method) ===== -->
+    <div class="menu-wrap">
+
+        <!-- Hamburger icon -->
+        <a class="hamburger" href="#navbar" aria-label="Open menu">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <!-- Nav must have id="navbar" so :target works -->
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products &amp; Solutions</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Straumann Campus</a></li>
+                <li><a href="#">Science</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Digital Performance</a></li>
+            </ul>
+
+            <!-- Close icon -->
+            <a class="close" href="#" aria-label="Close menu">
+                <i class="fa fa-close"></i>
+            </a>
+        </nav>
+
+    </div>
 
     <main class="page">
         <section class="cards-section">
-            <div class="cards-container" >
-                
+            <div class="cards-container">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+
+                        <div class="flip-card-front">
+                            <h3>Straumann® n!ce®</h3>
+                            <img src="images/nice.jpg" alt="Straumann n!ce">
+
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>
+                                High-tech glass-ceramic solution designed for fast, esthetic single-tooth restorations.
+                            </p>
+
+                            <a class="more-info"
+                                href="https://www.straumann.com/us/en/dental-professionals/digital-performance/consumables/blocks/straumann-nice.html"
+                                target="_blank" rel="noreferrer">
+                                More info
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+
+                        <div class="flip-card-front">
+                            <h3>IPS e.max® CAD</h3>
+                            <img src="images/max.jpg" alt="IPS e.max CAD">
+
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>
+                                Lithium-disilicate glass-ceramic used for esthetic CAD/CAM restorations.
+                            </p>
+
+                            <a class="more-info"
+                                href="https://www.straumann.com/us/en/dental-professionals/digital-performance/customized-prosthetics/cad-cam-tooth-prosthetics/ips-emax-cad.html"
+                                target="_blank" rel="noreferrer">
+                                More info
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+
+                        <div class="flip-card-front">
+                            <h3>zerion® LT</h3>
+                            <img src="images/zerion.jpg" alt="zerion LT">
+
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>
+                                High-strength zirconia available in multiple shades, used up to full-arch restorations.
+                            </p>
+
+                            <a class="more-info"
+                                href="https://www.straumann.com/us/en/dental-professionals/digital-performance/customized-prosthetics/cad-cam-tooth-prosthetics/zerion-lt.html"
+                                target="_blank" rel="noreferrer">
+                                More info
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+
+                        <div class="flip-card-front">
+                            <h3>3M™ Lava™ Plus</h3>
+                            <img src="images/lava+.jpg" alt="3M Lava Plus">
+
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>
+                                High translucent zirconia for natural-looking full-contour restorations.
+                            </p>
+
+                            <a class="more-info"
+                                href="https://www.straumann.com/us/en/dental-professionals/digital-performance/customized-prosthetics/cad-cam-tooth-prosthetics/3m-espe-lava-plus.html"
+                                target="_blank" rel="noreferrer">
+                                More info
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+
+                        <div class="flip-card-front">
+                            <h3>3M™ Lava™ Esthetic</h3>
+                            <img src="images/lava.jpg" alt="3M Lava Esthetic">
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>
+                                First zirconia with built-in fluorescence for high-esthetic full-contour cases.
+                            </p>
+
+                            <a class="more-info"
+                                href="https://www.straumann.com/us/en/dental-professionals/digital-performance/customized-prosthetics/cad-cam-tooth-prosthetics/3m-lava-esthetic.html">
+                                More info
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+
+                        <div class="flip-card-front">
+                            <h3>zerion® HTML</h3>
+                            <img src="images/zerion.jpg" alt="zerion HTML">
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>
+                                Zirconia with natural color gradient for up to full-arch full-contour restorations.
+                            </p>
+
+                            <a class="more-info"
+                                href="https://www.straumann.com/us/en/dental-professionals/digital-performance/customized-prosthetics/cad-cam-tooth-prosthetics/zerion-html.html">
+                                More info
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+
+                        <div class="flip-card-front">
+                            <h3>coron®</h3>
+                            <img src="images/coron.jpg" alt="coron">
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>
+                                High-quality cobalt-chromium alloy for veneerable screw-retained or cemented
+                                restorations up to full-arch.
+                            </p>
+
+                            <a class="more-info"
+                                href="https://www.straumann.com/us/en/dental-professionals/digital-performance/customized-prosthetics/cad-cam-tooth-prosthetics/coron.html">
+                                More info
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+
+                        <div class="flip-card-front">
+                            <h3>ticon®</h3>
+                            <img src="images/ticon.jpg" alt="ticon">
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>
+                                High-quality Titanium Grade 4 metal for screw-retained or cemented restorations up to
+                                full-arch.
+                            </p>
+
+                            <a class="more-info"
+                                href="https://www.straumann.com/us/en/dental-professionals/digital-performance/customized-prosthetics/cad-cam-tooth-prosthetics/ticon.html">
+                                More info
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+
+                        <div class="flip-card-front">
+                            <h3>polycon® ae</h3>
+                            <img src="images/polycon.jpg" alt="polycon ae">
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>
+                                Strong acrylate polymer for up to full-arch full-contour temporary restorations.
+                            </p>
+
+                            <a class="more-info"
+                                href="https://www.straumann.com/us/en/dental-professionals/digital-performance/customized-prosthetics/cad-cam-tooth-prosthetics/polycon-ae.html">
+                                More info
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+
+                        <div class="flip-card-front">
+                            <h3>VITA® CAD-Temp</h3>
+                            <img src="images/vita.jpg" alt="VITA CAD-Temp">
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>
+                                Esthetic polymer for long-term temporary crown and bridge restorations.
+                            </p>
+
+                            <a class="more-info"
+                                href="https://www.straumann.com/us/en/dental-professionals/digital-performance/consumables/blocks/vita-cad-temp.html">
+                                More info
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+
+                        <div class="flip-card-front">
+                            <h3>JUVORA™ PEEK</h3>
+                            <img src="images/juvora.jpg" alt="JUVORA PEEK">
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>
+                                Strong and lightweight high-performance polymer indicated for final full-arch
+                                restorations.
+                            </p>
+
+                            <a class="more-info"
+                                href="https://www.straumann.com/us/en/dental-professionals/digital-performance/consumables/discs/juvora-peek.html">
+                                More info
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
             </div>
 
         </section>
 
     </main>
-    
+
+    <footer class="site-footer">
+
+        <div class="footer-social">
+
+            <a href="https://www.facebook.com/StraumannUS" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCehQCA5FV97jUWhcqmz8rVg" target="_blank">
+                <i class="fa fa-youtube"></i>
+            </a>
+
+            <a href="https://www.instagram.com/straumann.us/" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/showcase/straumann/?viewAsMember=true" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
